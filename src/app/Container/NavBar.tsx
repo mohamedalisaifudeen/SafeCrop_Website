@@ -1,7 +1,7 @@
 "use client"; 
 import Image from "next/image";
 import Logo from "../../../public/Logo.png";
-function NavBar(Props: { link1: string ; link2: string; link3: string; link4: string; }){
+function NavBar( ){
     return(
 
 <nav className="bg-white p-4 fixed w-full z-50">
