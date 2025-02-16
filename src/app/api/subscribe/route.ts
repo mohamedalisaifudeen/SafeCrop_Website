@@ -10,10 +10,6 @@ export async function POST(req: Request, res: NextApiResponse) {
       return res.status(400).json({ error: 'Email is required' });
     }
 
-    const MailchimpKey = process.env.MAILCHIMP_API_KEY;
-    const MailchimpServer = process.env.MAILCHIMP_API_SERVER;
-    const MailchimpAudience = process.env.MAILCHIMP_LIST_ID;
-
 
 
     const response = await fetch(`https://${process.env.NEXT_PUBLIC_SERVER}.api.mailchimp.com/3.0/lists/${process.env.NEXT_PUBLIC_Audience_ID}/members`, {

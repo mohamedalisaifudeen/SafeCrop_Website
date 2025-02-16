@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Logo from "../../../public/Logo.png";
 import { useState } from "react";
-import { Console } from "console";
+
 function Footer(){
     const [getEmail,setEmail]=useState("");
     return(
@@ -64,7 +64,7 @@ function Footer(){
                           
                                 alert("Subscription successful!");
                               } catch (error) {
-                                alert("Failed to subscribe. Please try again.");
+                                alert("Failed to subscribe. Please try again. "+error);
                               }
 
                         }} className="bg-green-700 px-4 py-2 rounded-r-md hover:bg-green-800">Subscribe</button>
